@@ -13,7 +13,7 @@
     <main>
     <a href="index.php">voltar</a>
         <h1>Faça seu login na <br> Kallto AgroSolutions !</h1>
-        <form method="POST" action="usuario/perfil.php">
+        <form method="POST" action="Controller/loginController.php">
             <label>Email</label>
             <input type="text" name="usuario" placeholder="Digite o seu email"><br><br>
 
