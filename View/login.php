@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kallto Agrosolutions</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
     <main>
-    <a href="index.php">voltar</a>
+    <a href="../index.php">voltar</a>
         <h1>Faça seu login na <br> Kallto AgroSolutions !</h1>
-        <form method="POST" action="Controller/loginController.php">
+        <form method="POST" action="../Controller/loginController.php">
             <label>Email</label>
             <input type="text" name="usuario" placeholder="Digite o seu email"><br><br>
 

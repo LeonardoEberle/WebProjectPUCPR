@@ -39,6 +39,7 @@ if($qtd>0){
     $_SESSION["nome"] = $row->usu_nome;
     $_SESSION["email"] = $row->usu_email;
     $_SESSION["cargo"] = $row->usu_cargo;
+    $_SESSION["telefone"] = $row->usu_telefone;
     
     print"<script>location.href='../view/dashboard.php'</script>";
 }else{

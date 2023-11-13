@@ -1,4 +1,6 @@
 <?php
+    include_once("../conn.php");
+    
     session_start();
     if(empty($_SESSION)){
         echo"<script>alert('algo deu errado');
@@ -31,22 +33,20 @@
                 <div id="opcoes">
                     <h2>MENU</h2>
                     <ul>
-                        <li><a href="#">Agrotoxicos</a></li>
-                        <li><a href="#">Plantação</a></li>
-                        <li><a href="#">Grão</a></li>
+                        <li><a href="toxicos.php">Agrotoxicos</a></li>
+                        <li><a href="grao.php">Grão</a></li>
                         <li><a href="#">Relatórios</a></li>
-                        <li><a href="#">Fazenda</a></li>
-                        <li><a href="#">Funcionarios</a></li>
+                        <li><a href="fazenda.php">Fazenda</a></li>
                         <?php
-                        
+                            if($_SESSION["cargo"]==1 or $_SESSION["cargo"]==2){
+                                echo '<li><a href="#">Funcionarios</a></li>';
+                            }
                             if($_SESSION["cargo"]==1){
                                 echo ' 
                                 <li><a href="#">Usuários</a></li>
                                 <li><a href="#">Relatório de Usuários</a></li>';
                             }        
                         ?>
-
-                        <!-- Adicione mais itens conforme necessário -->
                     </ul>
                 </div>
             </section>

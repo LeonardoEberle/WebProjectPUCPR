@@ -17,7 +17,7 @@
                 <a href="sobre.html">Sobre</a>
                 <a href="servicos.html">Serviços</a>
                 <a href="contato.html">Contato</a>
-                <a href="cadastro.html">CADASTRE-SE</a>
+                <a href="view/cadastro.html">CADASTRE-SE</a>
         </ul>
     </div>
     </header>
