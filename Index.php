@@ -46,7 +46,7 @@
             <h2>Conheça a Solução Tech para sua fazenda<br> Entre em Contato conosco!</h2>
             <img src="img//logo.png" width="450px" height="450px" margin-left="80px">
         </div>
-        <form action="processar_cadastro.php" method="post">
+        <form action="" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br><br>
 
@@ -56,13 +56,10 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required><br><br>
-
             <label for="problema">Digite sua necessidade:</label>
             <input type="text" id="problema" name="problema" required><br><br>
 
-            <input type="submit" value="Cadastrar" id="cadastrarbotao">
+            <input type="submit" value="enviar" id="cadastrarbotao">
         </form>
             </div>
         </main>
