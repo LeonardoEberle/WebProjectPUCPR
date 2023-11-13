@@ -70,6 +70,15 @@ a{
     </style>
 </head>
 <body>
+
+    <?php
+    include_once("../conn.php");
+    $sql1 = "select * from estados";
+    $sql2 = "select * from cargo";
+    $res1 = $con->query($sql1);
+    $res2 = $con->query($sql2);
+    ?>
+
     <form action="../Controller/cadastroController.php" method="post">
         <h2>Cadastre-se na Kalltto Agrosolutions</h2>
         <div class="seta">
@@ -102,12 +111,16 @@ a{
 
         <label for="cargo">Cargo:</label>
         <select id="cargo" name="cargo" required>
-            <option value=""></option>
-            <option value=""></option>
+        <?php foreach($res2 as $row): ?>
+                <option value="<?= $row['car_id']; ?>"><?= $row['car_nome']; ?></option>
+        <?php endforeach; ?>
         </select>
 
         <label for="estado">Estado:</label>
         <select id="estado" name="estado" required>
+        <?php foreach($res1 as $row): ?>
+                <option value="<?= $row['est_id']; ?>"><?= $row['est_nome']; ?></option>
+        <?php endforeach; ?>
         </select>
 
         <input type="submit" value="Enviar">
@@ -129,7 +142,7 @@ a{
                     return;
                 }
 
-                const sexoRegex = /^(masculino|feminino|outro)$/;
+                const sexoRegex = /^(1|2)$/;
                 const sexoInput = form.querySelector('#sexo');
                 if (!sexoRegex.test(sexoInput.value)) {
                     alert('Por favor, selecione um sexo válido.');
