@@ -1,0 +1,121 @@
+/* Reset de estilos para eliminar margens e preenchimentos padrão */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+#itens-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#primeira-foto {
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+#servicos {
+    position: relative;
+}
+
+#servicos img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f2f2f2;
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+#logokallto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logokallto h2 {
+    font-size: 24px;
+}
+
+#logokallto img {
+    width: 450px;
+    height: 450px;
+    margin-left: 80px;
+}
+
+/* Estilo para o formulário de contato */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+#cadastrarbotao {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

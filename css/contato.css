@@ -1,0 +1,113 @@
+/* Adicione este bloco ao seu arquivo CSS ou ajuste conforme necessário */
+
+/* Estilo para o conteúdo principal, criando espaço para o cabeçalho fixo */
+html,body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+/* Estilo para o cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: green;
+    padding: 10px 20px;
+    z-index: 200; /* Garante que o cabeçalho esteja acima do conteúdo */
+    height: 80px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o título h1 no cabeçalho */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: -60px;
+    color: green;
+}
+
+/* Estilo para a imagem do logotipo no cabeçalho */
+#imgcabecalho {
+    width: 80px;
+    height: 80px;
+}
+
+/* Estilo para os links de navegação no cabeçalho */
+header ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 250px;
+    margin-top: -26px;
+}
+
+header ul a {
+    color: green;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-top: -50px;
+    font-weight: bolder;
+}
+
+/* Estilo para o conteúdo da página */
+main {
+    padding: 20px;
+    margin-bottom: 100px; /* Adicione uma margem inferior equivalente à altura do rodapé */
+}
+
+#servicos {
+    margin-bottom: 30px;
+}
+
+#logokallto {
+    float: left;
+}
+
+h2 {
+    color: green;
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: greenyellow;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    margin-left: 60%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+/* Estilo para rótulos e campos de entrada */
+label, input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Estilo para o botão de envio */
+#cadastrarbotao {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    overflow: hidden;
+}

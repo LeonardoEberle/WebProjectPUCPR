@@ -1,0 +1,72 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+ form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ form label {
+    display: flex;
+    flex-direction: column;
+}
+
+ form label span {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+ form input {
+    background: yellow;
+    width: 300px;
+    height: 50px;
+    padding: 0 , 8px;
+    margin-top: 10px;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 15px;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+button {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 30px;
+    border: none;
+    border-radius: 32px;
+    background:yellow ;
+    color: black;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+    height: 8vh;
+  }
+ form input[type="submit"]:hover {
+    background: #017374;
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 450px) {
+     h1 {
+        font-size: 2rem;
+    }
+     form label span,  form input[type="submit"] {
+        font-size: 1rem;
+}
+}

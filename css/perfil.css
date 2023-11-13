@@ -1,0 +1,131 @@
+/* Estilo para o conteúdo principal, criando espaço para o cabeçalho fixo */
+html,body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: green;
+    padding: 10px 20px;
+    z-index: 200; /* Garante que o cabeçalho esteja acima do conteúdo */
+    height: 80px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o título h1 no cabeçalho */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
+   margin-left: 100px;
+   margin-top: -60px;
+   color:green;
+   font-style: normal;
+   text-decoration: none;
+}
+header a {
+    text-decoration: none;
+    color: green;
+  
+}
+
+/* Estilo para a imagem do logotipo no cabeçalho */
+#imgcabecalho {
+    width: 80px;
+    height: 80px;
+    
+}
+
+/* Estilo para os links de navegação no cabeçalho */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -26px;
+    text-align: right;
+    margin-right: 100px;
+}
+
+header ul a {
+    color: green;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-top: -50px;
+    font-weight: bolder;
+}
+#opcoes {
+    width: 180px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    top: 80px; /* Altura do cabeçalho */
+    left: 0;
+    bottom: 0;
+    margin-top: 150px;
+}
+
+#opcoes h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#opcoes ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 70px;
+}
+
+#opcoes li {
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+#opcoes a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#opcoes a:hover {
+    color: #007bff;
+}
+/* Estilo para a seção de informações à direita do menu */
+#informacoes {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: -350px;
+}
+/* Estilo para a tabela */
+#informacoes table {
+    width: 50%;
+    border-collapse:collapse;
+    align-items: right;
+    margin-left: 300px;
+}
+
+#informacoes th, #informacoes td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+}
+
+#informacoes th {
+    background-color: #f2f2f2;
+}
+footer {
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    bottom: 0;
+}

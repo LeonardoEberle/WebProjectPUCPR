@@ -1,0 +1,82 @@
+/* Reset de estilos padrão do navegador para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50vh;
+}
+/* Estilo para o contêiner principal */
+.container {
+    background-color: yellow;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+/* Estilo para os títulos (h2) */
+h2 {
+    color: #333;
+}
+
+/* Estilo para os rótulos dos campos de entrada */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Estilo para os campos de entrada de texto e senha */
+input[type="text"],
+input[type="password"],
+input[type="email"] ,
+input[type="number"]  {
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão de submissão */
+input[type="submit"] {
+    background-color: #869c07;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Estilo para o botão de submissão quando hover */
+input[type="submit"]:hover {
+    background-color: #6404ff;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color:green;
+    margin-top: 20px;
+    font-weight: bold;
+
+}

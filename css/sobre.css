@@ -1,0 +1,91 @@
+html,body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    color: green;
+    padding: 10px 20px;
+    z-index: 200px; /* Garante que o cabeçalho esteja acima do conteúdo */
+    height: 80px;
+    font-family: Arial, sans-serif;
+    margin-top:0;
+}
+
+/* Estilo para o título h1 no cabeçalho */
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
+   margin-left: 100px;
+   margin-top: -60px;
+   color:green;
+}
+
+/* Estilo para a imagem do logotipo no cabeçalho */
+#imgcabecalho {
+    width: 80px;
+    height: 80px;
+    
+}
+
+/* Estilo para os links de navegação no cabeçalho */
+header ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 250px;
+    margin-top: -26px;
+}
+
+header ul a {
+    color: green;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-top: -50px;
+    font-weight: bolder;
+}
+ /* Estilo para o conteúdo da página "Sobre Nós" */
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    margin-top: 100px; /* Ajuste do espaçamento do header */
+    flex-direction: row; /* Alteração para linha */
+}
+
+.sobre-item {
+    text-align: center;
+    flex:1; /* Ocupa espaço igualmente */
+    margin:20px /* Espaçamento entre os itens */
+}
+
+.sobre-item img {
+    width: 300px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #3498db;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,255 @@
+/* Estilo para o conteúdo principal, criando espaço para o cabeçalho fixo */
+html,body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: green;
+    padding: 1.5vh 4vw; /* 1.5vh de altura e 4vw de largura de padding */
+    z-index: 200; /* Garante que o cabeçalho esteja acima do conteúdo */
+    height: 10vh; /* 10% da altura da viewport */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o título h1 no cabeçalho */
+header h1 {
+    font-size: 2vw; /* 3% da largura da viewport */
+    margin: 0;
+    padding: 1vh; /* 1% da altura da viewport */
+    margin-left: 8vw; /* 10% da largura da viewport */
+    margin-top: -11vh; /* -6% da altura da viewport */
+    color: green;
+}
+
+/* Estilo para a imagem do logotipo no cabeçalho */
+#imgcabecalho {
+    width: 10vw; /* 10% da largura da viewport */
+    height: 10vw; /* 10% da largura da viewport */
+}
+
+/* Estilo para os links de navegação no cabeçalho */
+header ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 18vw; /* 10% da largura da viewport */
+    margin-top: -4.6vh; /* -2.6% da altura da viewport */
+}
+
+header ul a {
+    color: green;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 6vw; /* 5% da largura da viewport */
+    margin-top: -5vh; /* -5% da altura da viewport */
+    font-weight: bolder;
+}
+
+/* Estilo para o conteúdo da página */
+main {
+    padding: 4vw; /* 4% da largura da viewport */
+}
+
+#servicos {
+    margin-bottom: 3vh; /* 3% da altura da viewport */
+}
+
+#servicos h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f2f2f2;
+    flex: 1;
+    padding: 2vw; /* 2% da largura da viewport */
+    margin: 2vw; /* 2% da largura da viewport */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card img {
+    width: 100%;
+    height: 34vh; /* 34% da altura da viewport */
+}
+
+#logokallto {
+    float: left;
+}
+
+h2 {
+    color: green;
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: greenyellow;
+    border-radius: 1.25vw; /* 1.25% da largura da viewport */
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.2); /* 0.5% da largura da viewport */
+    padding: 4vw; /* 4% da largura da viewport */
+    max-width: 30vw; /* 30% da largura da viewport */
+    margin-left: 60vw; /* 60% da largura da viewport */
+    margin-bottom: 3vh; /* 3% da altura da viewport */
+    margin-top: 5vh; /* 5% da altura da viewport */
+}
+
+/* Estilo para rótulos e campos de entrada */
+label, input {
+    display: block;
+    margin-bottom: 2vh; /* 2% da altura da viewport */
+    width: 100%;
+}
+
+/* Estilo para o botão de envio */
+#cadastrarbotao {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2vh 4vw; /* 2% da altura da viewport e 4% da largura da viewport */
+    border: none;
+    border-radius: 1.25vw; /* 1.25% da largura da viewport */
+    cursor: pointer;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    overflow: hidden;
+}
+/* Media Queries para Responsividade */
+
+@media screen and (max-width: 768px) {
+    /* Adicione ajustes para telas menores aqui */
+    header h1 {
+        font-size: 4vw;
+        margin-left: 5vw;
+        margin-top: -8vh;
+    }
+
+    header ul {
+        padding-left: 8vw;
+        margin-top: -4.6vh;
+    }
+
+    header ul a {
+        margin-left: 3vw;
+        margin-top: -5vh;
+    }
+
+    main {
+        padding: 8vw;
+    }
+
+    #servicos {
+        margin-bottom: 6vh;
+    }
+
+    .card {
+        padding: 5vw;
+        margin: 5vw;
+        max-width: 100%;
+    }
+
+    form {
+        padding: 8vw;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 8vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adicione ajustes para telas médias aqui */
+    header h1 {
+        font-size: 3vw;
+        margin-left: 8vw;
+        margin-top: -11vh;
+    }
+
+    header ul {
+        padding-left: 18vw;
+        margin-top: -4.6vh;
+    }
+
+    header ul a {
+        margin-left: 6vw;
+        margin-top: -5vh;
+    }
+
+    main {
+        padding: 4vw;
+    }
+
+    #servicos {
+        margin-bottom: 3vh;
+    }
+
+    .card {
+        padding: 2vw;
+        margin: 2vw;
+        max-width: 48%;
+    }
+
+    form {
+        padding: 4vw;
+        max-width: 48%;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* Adicione ajustes para telas grandes aqui */
+    header h1 {
+        font-size: 2vw;
+        margin-left: 8vw;
+        margin-top: -11vh;
+    }
+
+    header ul {
+        padding-left: 18vw;
+        margin-top: -4.6vh;
+    }
+
+    header ul a {
+        margin-left: 6vw;
+        margin-top: -5vh;
+    }
+
+    main {
+        padding: 4vw;
+    }
+
+    #servicos {
+        margin-bottom: 3vh;
+    }
+
+    .card {
+        padding: 2vw;
+        margin: 2vw;
+        max-width: 30%;
+    }
+
+    form {
+        padding: 4vw;
+        max-width: 30%;
+        margin-left: 60vw;
+        margin-top: 5vh;
+    }
+}
