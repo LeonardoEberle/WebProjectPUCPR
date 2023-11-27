@@ -59,23 +59,23 @@ create table relatorio (
 )
 
 CREATE TABLE `cargo` (
-  `car_id` int(11),
+  `car_id` int(11) primary key auto_increment,
   `car_nome` varchar(20)
 )
 
 CREATE TABLE `categoria_agrotoxico` (
-  `cat_id` int(11),
+  `cat_id` int(11) primary key auto_increment,
   `cat_descricao` varchar(40)
 )
 
 CREATE TABLE `grao` (
-  `gra_id` int(11),
+  `gra_id` int(11) primary key auto_increment,
   `gra_nome` varchar(20),
   `gra_tipo` varchar(40)
 )
 
 CREATE TABLE `solo` (
-  `sol_id` int(11),
+  `sol_id` int(11) primary key auto_increment,
   `sol_nome` varchar(20),
   `sol_descricao` varchar(60)
 )

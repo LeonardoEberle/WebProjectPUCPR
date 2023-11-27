@@ -19,8 +19,9 @@ $sql = "insert into usuarios
 values ('$nome','$sexo','$nasc','$telefone','$email','$login','$senha','$cargo','$estado')";
 
 if($cad = $con->query($sql)){
-    echo"<script>alert(cadastrado com sucesso);
-        location.href='../view/login.php';
+    echo "<script>
+    alert('conta criada com sucesso!');
+    location.href='../view/login.php';
     </script>";
 }else{
     echo "nao foi possivel cadastrar";

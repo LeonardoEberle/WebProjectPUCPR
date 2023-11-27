@@ -6,7 +6,7 @@ session_start();
 if(empty($_POST["usuario"]) || empty($_POST["senha"])){
     print"
         <script> alert('campo vazio!');
-        location.href='../login.php';
+        location.href='../view/login.php';
         </script>";
 }else{
     $usuario = $_POST["usuario"];

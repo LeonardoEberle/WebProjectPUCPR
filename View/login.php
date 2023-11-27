@@ -22,7 +22,7 @@
 
             <button name="btnLogin" value="Acessar">ENTRAR</button>
 
-            <a href="cadastro.html" ><span style="color:yellow"></span><h4>Você ainda não possui uma conta?</h4></a>
+            <a href="cadastro.php" ><span style="color:yellow"></span><h4>Você ainda não possui uma conta?</h4></a>
         </form>
     </main>
 </body>

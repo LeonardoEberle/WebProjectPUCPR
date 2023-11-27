@@ -142,14 +142,6 @@ a{
                     return;
                 }
 
-                const sexoRegex = /^(1|2)$/;
-                const sexoInput = form.querySelector('#sexo');
-                if (!sexoRegex.test(sexoInput.value)) {
-                    alert('Por favor, selecione um sexo válido.');
-                    event.preventDefault();
-                    return;
-                }
-
                 const nascimentoRegex = /^\d{4}-\d{2}-\d{2}$/;
                 const nascimentoInput = form.querySelector('#nascimento');
                 if (!nascimentoRegex.test(nascimentoInput.value)) {
